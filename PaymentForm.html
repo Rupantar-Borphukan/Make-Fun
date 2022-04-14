@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+     <div class="container">
+         <form action="" method="get">
+             <h1 class="Main-headingp">Payment Form</h1>
+             <hr>
+             <h2 class="User-Info">Fill the Form</h2>
+             <h4>(* Required)</h4>
+             <p>Name: *
+                 <input type="text" required name="name" placeholder="Enter your name">
+             </p>
+             <p>
+                 <fieldset>
+                     <legend>Gender</legend>
+                     Male <input type="radio" name="gender" id="male" value="M" required> Femle<input type="radio" name="gender" id="female" value="FM" required>
+                 </fieldset>
+             </p>
+             <p>
+                 Address: 
+                 <textarea placeholder="Enter your Address" name="address" id="address" cols="100"></textarea>
+             </p>
+             <p>
+                 Email-Id: *
+                 <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+             </p>
+             <p>
+                Phone-number: 
+                <input type="phoneno" name="Phone-number" id="Phone-number"  placeholder="Enter your Phone Number">
+            </p>
+             <p>
+                 Pincode:
+                 <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode">
+             </p>
+             <fieldset style="color:red;">
+                <legend style="color:springgreen;"><h2>Decleration</h2></legend>
+                <h2>
+                   False Email-Id,Name,Phone-number,etc.will lead to cancel of payment ,Kindly provide proper address.
+                </h2>
+              </fieldset>
+             <h2 class="User-pay">Payment Information</h2>
+             <p>Card Name:
+                 <select name="card name" id="card name" required>
+             <option value="--Select Card Name--">--Select Card Name--</option>
+             <option value="Master Card">Master Card</option>
+             <option value="Rupay">Rupay</option>
+             <option value="Visa">Visa</option>
+             <option value="Credit Card">Credit Card</option>
+            </select>
+               </p>
+               <p>
+                   Card Number: *
+                   <input type="number" name="cnumber" id="cnumber" required placeholder="Enter your Card Number">
+               </p>
+               <p>
+                   Expiration Date: *
+                   <input type="date" name="ex_date" id="ex_date" required >
+               </p>   
+               <p>
+                   CVV: *
+                   <input type="cvvno" name="cvv" id="cvv" required>
+               </p>
+               <input type="Submit" value="Pay Now">
+            
+         </form>
+
+     </div>
+    
+  </body>
+</html>
